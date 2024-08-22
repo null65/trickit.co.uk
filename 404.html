@@ -36,13 +36,33 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            animation: wiggle 3s infinite;
         }
+        @keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-5deg);   
+
+  }
+  100% {
+    transform: rotate(0deg);   
+
+  }
+}
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Oops! Something went wrong.</h1>
-        <p>The page you're looking for doesn't seem to exist.</p>
+        <p>This content is not yet avalible.</p>
         <p>We apologize for the inconvenience.</p>
 
         <a href="/" class="button">Go to Homepage</a>
